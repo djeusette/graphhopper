@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  graphhopper:
+    build: .
+    ports:
+      - 8989:8989
+    volumes:
+      - ./data:/data
+    environment:
+      OSM_FILE: /data/berlin-latest.osm.pbf
+    logging:
+      driver: json-file
+      options:
+        max-size: '10k'
+        max-file: '3'
