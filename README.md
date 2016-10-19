@@ -9,4 +9,10 @@
 
 ## Routing API
 
-See [API doc](https://github.com/graphhopper/graphhopper/blob/0.7/docs/web/api-doc.md)
+See [API doc](https://github.com/graphhopper/graphhopper/blob/0.8/docs/web/api-doc.md)
+
+## Example for Philippines
+
+```
+curl -X GET -H "Content-type: application/json" http://localhost:8989/route?point=14.5114141,121.0580759&point=14.568599,120.9883453
+```

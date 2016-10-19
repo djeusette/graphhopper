@@ -8,7 +8,7 @@ services:
     volumes:
       - ./data:/data
     environment:
-      OSM_FILE: /data/berlin-latest.osm.pbf
+      OSM_FILE: /data/philippines-latest.osm.pbf
     logging:
       driver: json-file
       options:
